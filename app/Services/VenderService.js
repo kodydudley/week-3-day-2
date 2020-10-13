@@ -13,9 +13,15 @@ class VenderService {
 
   buy(num) {
     let vender = ProxyState.vender
-    vender.total -= num
-    vender.total = vender.total < 0 ? 0 : vender.total
-    ProxyState.vender = vender;
+    if (vender.total >= num) {
+      vender.total -= num
+      vender.total = vender.total < 0 ? 0 : vender.total
+      ProxyState.vender = vender;
+    } else {
+      document.getElementById("moreMoney").innerHTML = /*html*/ `
+      <h1>You need more money!</h1>
+      `
+    }
   }
 
   total(num) {

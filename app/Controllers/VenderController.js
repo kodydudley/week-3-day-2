@@ -8,7 +8,6 @@ import Vender from "../Models/Vender.js";
 
 
 function draw() {
-  // console.log("This is from the controller34!")
   let vender = ProxyState.vender
   document.getElementById("vender").innerHTML = /*html*/ `
   <h1>Total: $${vender.total}</h1>
