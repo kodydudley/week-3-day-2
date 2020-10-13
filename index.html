@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style/main.css">
-    <title>latefall2020-slap-encap</title>
+    <title>Kody Dudley Vender</title>
 </head>
 
 <body>
@@ -16,17 +16,45 @@
         <nav class="navbar navbar-dark navbar-expand bg-dark text-light">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/logo.png" width="45" height="45" alt="" loading="lazy">
-                <span class="ml-2">latefall2020-slap-encap</span>
+                <span class="ml-2">Kody Dudley Vender</span>
             </a>
         </nav>
     </header>
     <main>
         <div id="app">
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 text-center justify-items-between money">
+                    <h1>Insert Money</h1>
+                    <button class="btn btn-primary" onclick="app.venderController.add(.25)">Add $.25</button>
+                    <button class="btn btn-primary" onclick="app.venderController.add(1)">Add $1</button>
+                    <button class="btn btn-primary" onclick="app.venderController.add(5)">Add $5</button>
+                </div>
+                <div class="col-4 text-center items">
+                    <h1>Items to Purchase</h1>
+                    <img class="itemPic"
+                        src="https://img2.pngio.com/bag-chips-package-potato-chip-icon-cartoon-potato-chips-png-512_512.png"
+                        alt="" srcset="">
+                    <button class="btn btn-primary" onclick="app.venderController.buy(.50)">Chips $.50</button>
+                    <img class="itemPic"
+                        src="https://www.jing.fm/clipimg/full/200-2001987_candy-bar-clipart-transparent-background-snickers.png"
+                        alt="" srcset="">
+                    <button class="btn btn-primary" onclick="app.venderController.buy(1)">Snickers $1</button>
+                    <img class="itemPic"
+                        src="https://lh3.googleusercontent.com/proxy/HHyIhaQXxB4GUgfONq0ZaKPLbGHuPB-Arl4Ag2H7ORFXqpRO_FVVoOmJRb-lAvgsw_DScmzPwtoWYVEjwoZuC9bV12ITlErakQYrRO2tsp94KXluFsS4ZY8yhOEVWH7rhyHLf96f4Kr1oX_fpPwA"
+                        alt="" srcset="">
+                    <button class="btn btn-primary" onclick="app.venderController.buy(1.50)">Soda $1.50</button>
+                </div>
+                <div class="col-4 text-center total">
+                    <h1>Total</h1>
+                </div>
+            </div>
+        </div>
+
         <div id="vender">
 
         </div>
-        <button class="btn btn-primary" onclick="app.VenderController.addValue('add')">Add 25</button>
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">
