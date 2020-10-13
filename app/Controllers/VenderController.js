@@ -11,7 +11,7 @@ function draw() {
   // console.log("This is from the controller34!")
   let vender = ProxyState.vender
   document.getElementById("vender").innerHTML = /*html*/ `
-  <h1>${vender.total}</h1>
+  <h1>Total: $${vender.total}</h1>
   `
 }
 
@@ -31,4 +31,6 @@ export default class VenderContoller {
   total(input) {
     venderService.total(input)
   }
+
 }
+draw()
