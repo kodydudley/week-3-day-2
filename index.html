@@ -21,17 +21,17 @@
         </nav>
     </header>
     <main>
-        <div id="app">
-        </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4 text-center justify-items-between money">
+                <div id="app">
+                </div>
+                <div class="col-6 text-center justify-items-between money">
                     <h1>Insert Money</h1>
                     <button class="btn btn-primary" onclick="app.venderController.add(.25)">Add $.25</button>
                     <button class="btn btn-primary" onclick="app.venderController.add(1)">Add $1</button>
                     <button class="btn btn-primary" onclick="app.venderController.add(5)">Add $5</button>
                 </div>
-                <div class="col-4 text-center items">
+                <div class="col-6 text-center items">
                     <h1>Items to Purchase</h1>
                     <img class="itemPic"
                         src="https://img2.pngio.com/bag-chips-package-potato-chip-icon-cartoon-potato-chips-png-512_512.png"
@@ -46,14 +46,13 @@
                         alt="" srcset="">
                     <button class="btn btn-primary" onclick="app.venderController.buy(1.50)">Soda $1.50</button>
                 </div>
-                <div class="col-4 text-center total">
-                    <h1>Total</h1>
-                </div>
             </div>
         </div>
+        <div class="row">
+            <h1 class="col-6 text-right">Total: $</h1>
+            <div class="col-6 text-left" id="vender">
 
-        <div id="vender">
-
+            </div>
         </div>
     </main>
     <footer class="container-fluid bg-dark text-light">

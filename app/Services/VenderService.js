@@ -2,7 +2,7 @@ import {
   ProxyState
 } from "../AppState.js"
 import Vender from "../Models/Vender.js"
-// import Items from "../Models/Items.js"
+import Items from "../Models/Items.js"
 
 class VenderService {
   add(num) {
@@ -23,6 +23,8 @@ class VenderService {
     vender.total -= num
     ProxyState.vender = vender;
   }
+
+
 }
 
 // export const characterService = new CharacterService()
